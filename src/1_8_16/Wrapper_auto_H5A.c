@@ -335,7 +335,10 @@ SEXP R_H5Aget_name(SEXP R_attr_id, SEXP R_buf_size, SEXP R_buf){
   size_t buf_size = SEXP_to_longlong(R_buf_size, 0);
   char* buf;
   if(XLENGTH(R_buf) == 0) {
-    buf = NULL;
+    // workaround for https://github.com/hhoeflin/hdf5r/issues/208 :
+    // initialise buf to non-null value
+    static char empty_buf[0] = {};
+    buf = empty_buf;
   }
   else {
     buf = R_alloc(strlen(CHAR(STRING_ELT(R_buf, 0))) + 1, 1);
@@ -618,7 +621,10 @@ SEXP R_H5Aread(SEXP R_attr_id, SEXP R_type_id, SEXP R_buf, SEXP _dupl_buf){
   hid_t type_id = SEXP_to_longlong(R_type_id, 0);
   void* buf;
   if(XLENGTH(R_buf) == 0) {
-    buf = NULL;
+    // workaround for https://github.com/hhoeflin/hdf5r/issues/208 :
+    // initialise buf to non-null value
+    static char empty_buf[0] = {};
+    buf = empty_buf;
   }
   else {
     buf = (void *) VOIDPTR(R_buf);
@@ -694,7 +700,10 @@ SEXP R_H5Awrite(SEXP R_attr_id, SEXP R_type_id, SEXP R_buf){
   hid_t type_id = SEXP_to_longlong(R_type_id, 0);
   const void* buf;
   if(XLENGTH(R_buf) == 0) {
-    buf = NULL;
+    // workaround for https://github.com/hhoeflin/hdf5r/issues/208 :
+    // initialise buf to non-null value
+    static char empty_buf[0] = {};
+    buf = empty_buf;
   }
   else {
     buf = (void *) VOIDPTR(R_buf);
