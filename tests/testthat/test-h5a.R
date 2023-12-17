@@ -247,7 +247,7 @@ test_that("Creating attributes of different types of length 0", {
     res_string_variable <- read_write_roundtrip(attr_string_variable, character(0))
     expect_equal(res_string_variable$input, res_string_variable$output)
 
-    res_cpd <- read_write_roundtrip(attr_cpd, data.frame())
+    res_cpd <- read_write_roundtrip(attr_cpd, data.frame(a = numeric(0), b = numeric(0)))
     expect_equal(res_cpd$input, res_cpd$output)
     
     file.h5$close_all()
