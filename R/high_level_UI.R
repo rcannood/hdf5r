@@ -414,7 +414,7 @@ check_arg_for_hyperslab_func <- function(x, envir) {
 ##' @param post_read Should the reshuffle be computed for post-read (then \code{TRUE}) or pre-write (then \code{FALSE})
 ##' @return A list with 2 parts; Evaluated arguments, regularity report and reshuffle indicators. Will be returned as a list
 ##' with components \code{args_in}, \code{args_point}, \code{is_hyperslab}, \code{hyperslab},
-##' \code{needs_reshuffle}, code{reshuffle}, \code{result_dims_pre_shuffle}, \code{result_dims_post_shuffle}, \code{max_dims}
+##' \code{needs_reshuffle}, \code{reshuffle}, \code{result_dims_pre_shuffle}, \code{result_dims_post_shuffle}, \code{max_dims}
 ##' @author Holger Hoefling
 ##' @keywords internal
 args_regularity_evaluation <- function(args, ds_dims, envir, post_read=TRUE) {

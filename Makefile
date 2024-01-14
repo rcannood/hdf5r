@@ -3,8 +3,8 @@ SHELL:=/bin/bash
 
 R_REVISION?=85786
 HDF5_VERSION?=System
-DOCKER_CRAN_CHECK_ARG=''
-# DOCKER_CRAN_CHECK_ARG='--as-cran'
+# DOCKER_CRAN_CHECK_ARG=''
+DOCKER_CRAN_CHECK_ARG='--as-cran'
 
 R := R --slave --vanilla -e
 Rscript := Rscript -e
