@@ -592,7 +592,7 @@ SEXP R_H5Dvlen_reclaim(SEXP R_type_id, SEXP R_space_id, SEXP R_plist_id, SEXP R_
   hid_t space_id = SEXP_to_longlong(R_space_id, 0);
   hid_t plist_id = SEXP_to_longlong(R_plist_id, 0);
   void* buf;
-  if(TYPEOF(R_buf) == NILSXP) {
+  if(XLENGTH(R_buf) == 0) {
     buf = NULL;
   }
   else {
