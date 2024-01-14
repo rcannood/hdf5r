@@ -18,7 +18,6 @@
 
 
 #include "datatype_export.h"
-#include <inttypes.h>
 
 hid_t h5_datatype[DT_LAST_ITEM];
 
@@ -65,7 +64,7 @@ hid_t get_h5_equiv(int size, bool sign) {
 SEXP print_dtypes_array(void) {
   Rprintf("New -------------------------------------\n");
   for(int i=0; i < DT_LAST_ITEM; ++i) {
-    Rprintf("%d: %" PRId64 "\n", i, h5_datatype[i]);
+    Rprintf("%d: %d\n", i, h5_datatype[i]);
   }
   return(R_NilValue);
 }
