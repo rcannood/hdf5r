@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://hhoeflin.github.io/hdf5r/404.html</loc>
+  </url>
+  <url>
+    <loc>http://hhoeflin.github.io/hdf5r/LICENSE-text.html</loc>
+  </url>
+  <url>
+    <loc>http://hhoeflin.github.io/hdf5r/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>http://hhoeflin.github.io/hdf5r/TODO.html</loc>
+  </url>
+  <url>
+    <loc>http://hhoeflin.github.io/hdf5r/articles/hdf5r.html</loc>
+  </url>
+  <url>
+    <loc>http://hhoeflin.github.io/hdf5r/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>http://hhoeflin.github.io/hdf5r/authors.html</loc>
+  </url>
+  <url>
     <loc>http://hhoeflin.github.io/hdf5r/index.html</loc>
+  </url>
+  <url>
+    <loc>http://hhoeflin.github.io/hdf5r/news/index.html</loc>
   </url>
   <url>
     <loc>http://hhoeflin.github.io/hdf5r/reference/H5A-class.html</loc>
@@ -217,7 +241,13 @@
     <loc>http://hhoeflin.github.io/hdf5r/reference/hdf5r-package.html</loc>
   </url>
   <url>
+    <loc>http://hhoeflin.github.io/hdf5r/reference/hdf5r.html</loc>
+  </url>
+  <url>
     <loc>http://hhoeflin.github.io/hdf5r/reference/hyperslab_to_points.html</loc>
+  </url>
+  <url>
+    <loc>http://hhoeflin.github.io/hdf5r/reference/index.html</loc>
   </url>
   <url>
     <loc>http://hhoeflin.github.io/hdf5r/reference/is_hdf5.html</loc>
@@ -257,8 +287,5 @@
   </url>
   <url>
     <loc>http://hhoeflin.github.io/hdf5r/reference/types_env_access.html</loc>
-  </url>
-  <url>
-    <loc>http://hhoeflin.github.io/hdf5r/articles/hdf5r.html</loc>
   </url>
 </urlset>
