@@ -1,3 +1,8 @@
+# hdf5r 1.3.10
+- Fixed warnings related to printf in convert.c on M1Mac
+- Fixed broken links to HDF5 docs
+- Conform to RTools (PR #218)
+
 # hdf5r 1.3.9
 - Fixed issues with string formatting
 
